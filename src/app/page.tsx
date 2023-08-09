@@ -36,12 +36,12 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box
-          className="max-md:flex-col  min-w-0 max-md:max-w-[200px] max-md:h-[90%] max-md:min-w-[200px] flex"
+          className="max-md:flex-col  min-w-0 max-md:max-w-[310px] max-md:h-[90%] max-md:min-w-[310px] flex"
           sx={style}
         >
           <img
             src="/portrait.jpg"
-            className="w-[60%] max-md:h-[60%] max-w-[310px] md:rounded-l-2xl max-md:rounded-t-2xl max-md:min-w-[100%]"
+            className="max-md:h-[60%] max-w-[310px] md:rounded-l-2xl max-md:rounded-t-2xl max-md:min-w-[100%]"
           />
           <Typography id="modal-modal-description" sx={{ my: 2, mx: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
