@@ -12,9 +12,10 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "auto",
-  height: "auto",
+  height: "80%",
   bgcolor: "background.paper",
   borderRadius: "16px",
+  maxHeight: "413px",
   boxShadow: 24,
   display: "flex",
   text: "center",
@@ -34,10 +35,13 @@ export default function BasicModal() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box className="max-md:flex-col min-w-0 flex" sx={style}>
+        <Box
+          className="max-md:flex-col  min-w-0 max-md:max-w-[200px] max-md:h-[90%] max-md:min-w-[200px] flex"
+          sx={style}
+        >
           <img
             src="/portrait.jpg"
-            className="min-w-0 max-w-[310px] md:rounded-l-2xl max-md:rounded-t-2xl max-md:min-w-[100%]"
+            className="w-[60%] max-md:h-[60%] max-w-[310px] md:rounded-l-2xl max-md:rounded-t-2xl max-md:min-w-[100%]"
           />
           <Typography id="modal-modal-description" sx={{ my: 2, mx: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
